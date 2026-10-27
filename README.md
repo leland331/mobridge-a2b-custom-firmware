@@ -6,7 +6,7 @@ Unofficial firmware for the **DA-G2.Pro A2B Ford, product ID `0x202c`**.
 
 ## Current release
 
-**LB-06 / 2.11.14**, based on stock firmware **2.11.8**. It includes fixes for amp wake failures and ignition-on and shutdown snaps. See the [release notes](release-notes/LB-06.md) for details and checksums.
+**LB-06 / 2.11.14**, based on stock firmware **2.11.8**. It includes fixes for amp wake failures and ignition-on and shutdown pops. See the [release notes](release-notes/LB-06.md) for details and checksums.
 
 Proven on the **DA-G2.Pro A2B Ford** in normal use. Other models have not been tested.
 
@@ -26,6 +26,14 @@ Use the official mObridge app's firmware update process to load the release `.fi
 Use the official app to install your device's correct stock firmware. If prompted about an older or equal version, confirm the downgrade. Restore your `.rax` settings backup if needed.
 
 Bootloader recovery mode has been examined but has not been hardware tested. Recovery from firmware that will not boot is not guaranteed.
+
+## Future plans
+
+- Rear-fill algorithm.
+- Dolby Pro Logic-style surround decoding.
+- Dynamic EQ curves based on vehicle speed and volume.
+
+These features are planned and are not included in LB-06.
 
 ## About
 
