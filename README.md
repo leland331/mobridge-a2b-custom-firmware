@@ -1,8 +1,8 @@
-# mObridge Custom Firmware
+# mObridge A2B Custom Firmware
 
 Unofficial firmware for the **DA-G2.Pro A2B Ford, product ID `0x202c`**.
 
-[Download the latest release](https://github.com/leland331/mobridge-custom-firmware/releases/latest)
+[Download the latest release](https://github.com/leland331/mobridge-a2b-custom-firmware/releases/latest)
 
 ## Current release
 
