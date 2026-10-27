@@ -8,7 +8,7 @@ Unofficial firmware for the **DA-G2.Pro A2B Ford, product ID `0x202c`**.
 
 **LB-06 / 2.11.14**, based on stock firmware **2.11.8**. It includes fixes for amp wake failures and ignition-on and shutdown snaps. See the [release notes](release-notes/LB-06.md) for details and checksums.
 
-Installed and tested by the maintainer on one setup. Other hardware and vehicle combinations have not been validated.
+Proven on the **DA-G2.Pro A2B Ford** in normal use. Other models have not been tested.
 
 ## Before updating
 
