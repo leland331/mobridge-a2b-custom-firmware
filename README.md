@@ -1,42 +1,38 @@
 # mObridge A2B Custom Firmware
 
-Unofficial firmware for the **DA-G2.Pro A2B Ford, product ID `0x202c`**.
+Unofficial firmware for the **DA-G2.Pro A2B Ford, product ID `0x202c`**. Do not use it on any other product.
 
-[Download the latest release](https://github.com/leland331/mobridge-a2b-custom-firmware/releases/latest)
+- **Stable** (2.11.x): bug fixes. Recommended for everyone.
+- **Beta** (2.12.x): new features, still being tested.
 
-## Current release
+[All releases](https://github.com/leland331/mobridge-a2b-custom-firmware/releases)
 
-**LB-06 / 2.11.14**, based on stock firmware **2.11.8**. It includes fixes for amp wake failures and ignition-on and shutdown pops. See the [release notes](release-notes/LB-06.md) for details and checksums.
+| Channel | Release | Notes |
+|---|---|---|
+| Stable | LB-06 / 2.11.14 | [release notes](release-notes/LB-06.md) |
+| Beta | LB-RC1 / 2.12.0 | [release notes](release-notes/LB-RC1.md) |
 
-Proven on the **DA-G2.Pro A2B Ford** in normal use. Other models have not been tested.
+> **Use at your own risk.** This is an unofficial project, unaffiliated with mObridge. An update can leave
+> the device unusable. No license is granted here for the manufacturer's firmware.
 
 ## Before updating
 
-- Confirm your device is the DA-G2.Pro A2B Ford with product ID `0x202c`. Do not use this firmware on another product.
-- Save your settings as a `.rax` backup using the official mObridge app.
-- Keep a copy of the correct stock firmware for your device in case you need to roll back.
-- Use stable power throughout the update. Check the downloaded file against the SHA-256 in the release notes.
+- Save your settings as a `.rax` backup with the official mObridge app.
+- Keep a copy of a firmware you know works (stock or a previous release).
+- Use stable power. Check the file against the SHA-256 in the release notes.
 
 ## Install
 
-Use the official mObridge app's firmware update process to load the release `.fif` file. Do not disconnect power during the update. Afterward, check the reported version and test normal audio, chimes, wake and shutdown behavior.
+Load the `.fif` with the official mObridge app's firmware update. Don't disconnect power during the update.
 
 ## Roll back
 
-Use the official app to install your device's correct stock firmware. If prompted about an older or equal version, confirm the downgrade. Restore your `.rax` settings backup if needed.
+1. Flash a different firmware over it (a previous release or stock) with the official app. Answer **Yes** if it
+   asks about an older or equal version. Restore your `.rax` if needed.
+2. If the unit no longer starts normally, its bootloader takes over on its own (the bootloader is never
+   changed by these releases). Connect the official app and use **Firmware Recovery** to flash a known-good `.fif`.
 
-Bootloader recovery mode has been examined but has not been hardware tested. Recovery from firmware that will not boot is not guaranteed.
+## Planned
 
-## Future plans
-
-- Rear-fill algorithm.
-- Dolby Pro Logic-style surround decoding.
-- Dynamic EQ curves based on vehicle speed and volume.
-
-These features are planned and are not included in LB-06.
-
-## About
-
-This repository contains public firmware releases and their documentation. Future releases and a custom app may be added here.
-
-This is an unofficial project, unaffiliated with mObridge. Use at your own risk; an update can leave the device unusable. No license is granted here for the manufacturer's firmware.
+- Centre and surround upmixing (frequency- and time-based, similar to Logic 7 / Pro Logic II).
+- Speed-dependent EQ and volume.
